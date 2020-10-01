@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="gbot_seeds">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.0553904425615102 0.00113748756294395 0.129883619627932"
+        rpy="0 0 0" />
+      <mass
+        value="2.31853271177188" />
+      <inertia
+        ixx="0.018527099319103"
+        ixy="2.30116371294385E-07"
+        ixz="4.08313298630105E-05"
+        iyy="0.0202888044212146"
+        iyz="1.84161413608486E-07"
+        izz="0.0272988542662515" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gbot_seeds/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gbot_seeds/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="rigth_back_wheel">
+    <inertial>
+      <origin
+        xyz="-2.40119035765929E-12 0.0331497318284548 -4.87278206678932E-06"
+        rpy="0 0 0" />
+      <mass
+        value="1.4314468827702" />
+      <inertia
+        ixx="0.00331966385882785"
+        ixy="-1.45452365120741E-14"
+        ixz="-3.05004692237298E-10"
+        iyy="0.00595558734491726"
+        iyz="3.90259323980359E-07"
+        izz="0.0033196987592927" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gbot_seeds/meshes/rigth_back_wheel.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gbot_seeds/meshes/rigth_back_wheel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_rigth_back_wheel"
+    type="continuous">
+    <origin
+      xyz="-0.18656 -0.2221 -0.062591"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="rigth_back_wheel" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="rigth_foward_wheel">
+    <inertial>
+      <origin
+        xyz="-2.41212605445185E-12 0.0331497318284464 -4.87278206684483E-06"
+        rpy="0 0 0" />
+      <mass
+        value="1.4314468827702" />
+      <inertia
+        ixx="0.00331966385882785"
+        ixy="-1.45448145383519E-14"
+        ixz="-3.05004692358221E-10"
+        iyy="0.00595558734491727"
+        iyz="3.90259323980046E-07"
+        izz="0.0033196987592927" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gbot_seeds/meshes/rigth_foward_wheel.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gbot_seeds/meshes/rigth_foward_wheel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_rigth_foward_wheel"
+    type="continuous">
+    <origin
+      xyz="0.1949 -0.2221 -0.062591"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="rigth_foward_wheel" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="left_back_wheel">
+    <inertial>
+      <origin
+        xyz="2.42431075214711E-12 -0.0331497318284389 -4.87278206678932E-06"
+        rpy="0 0 0" />
+      <mass
+        value="1.43144688277019" />
+      <inertia
+        ixx="0.00331966385882785"
+        ixy="-1.45269075521099E-14"
+        ixz="3.05004692922384E-10"
+        iyy="0.00595558734491726"
+        iyz="-3.90259323978443E-07"
+        izz="0.00331969875929269" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gbot_seeds/meshes/left_back_wheel.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gbot_seeds/meshes/left_back_wheel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_left_back_wheel"
+    type="continuous">
+    <origin
+      xyz="-0.1906 0.2221 -0.062591"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="left_back_wheel" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="left_foward_wheel">
+    <inertial>
+      <origin
+        xyz="2.42569853092789E-12 -0.0331497318284375 -4.87278206673381E-06"
+        rpy="0 0 0" />
+      <mass
+        value="1.43144688277019" />
+      <inertia
+        ixx="0.00331966385882785"
+        ixy="-1.45259875603743E-14"
+        ixz="3.05004693644362E-10"
+        iyy="0.00595558734491726"
+        iyz="-3.90259323980073E-07"
+        izz="0.00331969875929269" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gbot_seeds/meshes/left_foward_wheel.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gbot_seeds/meshes/left_foward_wheel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_left_foward_wheel"
+    type="continuous">
+    <origin
+      xyz="0.19016 0.2221 -0.062591"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="left_foward_wheel" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="rgb_camera_side">
+    <inertial>
+      <origin
+        xyz="0.00113468804305669 0.0203709001337813 3.99668076411785E-11"
+        rpy="0 0 0" />
+      <mass
+        value="0.0479573335905894" />
+      <inertia
+        ixx="1.01756104726194E-05"
+        ixy="6.86174879856498E-08"
+        ixz="-5.36289082964388E-14"
+        iyy="1.14036687926879E-05"
+        iyz="-1.20558285204482E-14"
+        izz="1.01992691696519E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gbot_seeds/meshes/rgb_camera_side.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gbot_seeds/meshes/rgb_camera_side.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_rgb_camera_side"
+    type="fixed">
+    <origin
+      xyz="-0.011411 -0.075037 0.32166"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="rgb_camera_side" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="rgb_front_camera">
+    <inertial>
+      <origin
+        xyz="-0.0204005333910195 0.000280079353794167 -2.97325848684915E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.0479573338696644" />
+      <inertia
+        ixx="1.14072555151408E-05"
+        ixy="-1.69617533804494E-08"
+        ixz="1.76057881164294E-09"
+        iyy="1.01720213342238E-05"
+        iyz="-2.42268841730662E-11"
+        izz="1.01992717586368E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gbot_seeds/meshes/rgb_front_camera.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gbot_seeds/meshes/rgb_front_camera.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_rgb_front_camera"
+    type="fixed">
+    <origin
+      xyz="0.073565 0.0042279 0.41078"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="rgb_front_camera" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="mynteye_camera">
+    <inertial>
+      <origin
+        xyz="-0.0197960945345471 0.000483501809540014 0.0792949214654225"
+        rpy="0 0 0" />
+      <mass
+        value="0.0963069752443604" />
+      <inertia
+        ixx="0.000301557937541839"
+        ixy="-5.90605585318967E-07"
+        ixz="3.75945503558149E-07"
+        iyy="4.19926052160339E-05"
+        iyz="-1.18936551983875E-06"
+        izz="0.000300310748881005" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gbot_seeds/meshes/mynteye_camera.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gbot_seeds/meshes/mynteye_camera.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_mynteye_camera"
+    type="fixed">
+    <origin
+      xyz="0.073565 0.0042279 0.41078"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="mynteye_camera" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>

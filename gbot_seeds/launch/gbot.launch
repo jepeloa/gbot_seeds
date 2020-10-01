@@ -1,0 +1,34 @@
+<launch>
+  <include
+    file="$(find gbot_seeds)/launch/rgb_cameras.launch" />
+  <include
+    file="$(find mynt_eye_ros_wrapper)/launch/slam/vins_fusion.launch" />
+  <include
+    file="$(find gbot_seeds)/launch/point_to_scan.launch" />
+  <include
+    file="$(find ros_arduino_python)/launch/arduino.launch" />
+  <arg
+    name="model" />
+  <arg
+    name="gui"
+    default="False" />
+  <param
+    name="robot_description"
+    textfile="$(find gbot_seeds)/urdf/gbot_seeds.urdf" />
+  <param
+    name="use_gui"
+    value="$(arg gui)" />
+  <node
+    name="joint_state_publisher"
+    pkg="joint_state_publisher"
+    type="joint_state_publisher" />
+  <node
+    name="robot_state_publisher"
+    pkg="robot_state_publisher"
+    type="state_publisher" />
+  <node
+    name="rviz"
+    pkg="rviz"
+    type="rviz"
+    args="-d $(find gbot_seeds)/urdf.rviz" />
+</launch>
